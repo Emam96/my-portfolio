@@ -19,8 +19,12 @@ import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
+import cardImg from "assets/img/theme/wildtee.jpeg";
 import ill2 from "assets/img/ill/ill-2.svg";
+import aboutMe from "assets/img/theme/aboutMe.jpeg";
+import journey from "assets/img/theme/journy.jpeg";
+import pat from "assets/img/theme/pat.jpeg";
+import emr from "assets/img/theme/emamR.png";
 import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
 import team3 from "assets/img/theme/team-3-800x800.jpg";
@@ -64,8 +68,8 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
+            <section style={{ height: "500px", backgroundColor: "#53B8BB",   margin: "0rem auto", textAlign: "center"   }} className="section section-lg section-shaped pb-250">
+              {/* <div className="shape shape-style-1 shape-default">
                 <span />
                 <span />
                 <span />
@@ -75,205 +79,76 @@ class Landing extends React.Component {
                 <span />
                 <span />
                 <span />
-              </div>
-              <Container className="py-lg-md d-flex">
-                <div className="col px-0">
-                  <Row>
-                    <Col lg="6">
-                      <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+              </div> */}
+              <Container style={{  display: "flex", justifyContent: "center",  margin: "2rem auto", textAlign: "center"  }} className="py-lg-md d-flex">
+                <div style={{ margin: "1rem auto",    }} className="col px-0">
+                  {/* <Row> */}
+                    {/* <Col  lg="6"> */}
+                    <div style={{   margin: "0rem auto",   }} >
+                      <h1 style={{      }} className="display-3 text-white">
+                        Take a look on some of my work{" "}
+                        <span>All done within the boot-camp on ASAC</span>
                       </h1>
+                      </div>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                      Tech excites me because we will never know what we will come up next or what the is the next invention that will change and shape our future, another thing about tech is that it has been built block by block, inventions drove other inventions, looking back and tracking the steps that placed us here is brilliant
                       </p>
                       <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-code" />
-                          </span>
-                          <span className="btn-inner--text">Components</span>
-                        </Button>
-                        <Button
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="ni ni-cloud-download-95" />
-                          </span>
-                          <span className="btn-inner--text">
-                            Download React
-                          </span>
-                        </Button>
+                        
                       </div>
-                    </Col>
-                  </Row>
+                    {/* </Col> */}
+                  {/* </Row> */}
                 </div>
               </Container>
               {/* SVG separator */}
               <div className="separator separator-bottom separator-skew">
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
                   version="1.1"
                   viewBox="0 0 2560 100"
                   x="0"
                   y="0"
-                >
+                > */}
                   <polygon
                     className="fill-white"
                     points="2560 0 2560 100 0 100"
                   />
-                </svg>
+                {/* </svg> */}
               </div>
             </section>
             {/* 1st Hero Variation */}
           </div>
           <section className="section section-lg pt-lg-0 mt--200">
-            <Container>
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <Row className="row-grid">
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
-                          </div>
-                          <h6 className="text-primary text-uppercase">
-                            Download Argon
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              design
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              system
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              creative
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
-                          </div>
-                          <h6 className="text-success text-uppercase">
-                            Build Something
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="success" pill className="mr-1">
-                              business
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              vision
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              success
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
-                          </div>
-                          <h6 className="text-warning text-uppercase">
-                            Prepare Launch
-                          </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              marketing
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              product
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              launch
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
+            
           </section>
-          <section className="section section-lg">
+         
+          <section   style={{ width: '80%', margin: "9rem auto", boxShadow: "0px 5px 10px lightgrey", borderRadius: "5px"   }} className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
                   <img
                     alt="..."
                     className="img-fluid floating"
-                    src={promo1}
+                    src={cardImg}
+                    width = '1500px'
+                    style={{ boxShadow: "0px 5px 10px lightgrey"  }}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
-                    </div>
-                    <h3>Awesome features</h3>
+                    </div> */}
+                    <h3>WildTee (201 Project)</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                    This project is a website that delivers customized teeshirts with a lot of design and color options:
+                    <br></br>
+                     Name: WildTee <br></br>
+                     Number of pages: 4-5 <br></br>
+                     Project duration: 1 week <br></br>
+                     
+                     Product: customized shirts
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -288,7 +163,7 @@ class Landing extends React.Component {
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Carefully crafted components
+                            Tools: HTML, CSS, and Javascript
                             </h6>
                           </div>
                         </div>
@@ -304,7 +179,7 @@ class Landing extends React.Component {
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
+                            <h6 className="mb-0">Catchy Design</h6>
                           </div>
                         </div>
                       </li>
@@ -320,17 +195,309 @@ class Landing extends React.Component {
                           </div>
                           <div>
                             <h6 className="mb-0">
-                              Super friendly support team
+                              Responsive
                             </h6>
                           </div>
                         </div>
                       </li>
                     </ul>
+                    <div  style={{  width: "fit-Content",   margin: "0rem auto", fontSize: "1.5pc", boxShadow: "0px 2px 5px lightGrey", padding: "0.5rem", borderRadius: "5px", borderWidth: "1px" }}>
+                      <a href="https://tee-corp.github.io/Wild-Tee/" target="_blank">Visit</a>
+                      </div>
+                  </div>
+
+                </Col>
+              </Row>
+            </Container>
+            
+          </section>
+          <hr 
+          width = "80%"
+           
+          ></hr>
+          <section style={{ width: '80%', margin: "7rem auto", boxShadow: "0px 5px 10px lightgrey"  }} className="section section-lg">
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={aboutMe}
+                    width = '1500px'
+                    style={{ boxShadow: "0px 5px 10px lightgrey"  }}
+                  />
+                </Col>
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div> */}
+                    <h3>About Me Page (201 Project)</h3>
+                    <p>
+                    This project is a website I made to introduce myself to others using a small quiz:<br></br>
+
+                     Name: About Me<br></br>
+                     Number of pages: 3<br></br>
+                     Project duration: 1 week<br></br>
+                     
+                     
+                    </p>
+                    <ul className="list-unstyled mt-5">
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-settings-gear-65" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            Tools: HTML, CSS, and Javascript
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-html5" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">Bold Design and catchy colors</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-satisfied" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                              Funny and interactive
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div  style={{  width: "fit-Content",   margin: "0rem auto", fontSize: "1.5pc", boxShadow: "0px 2px 5px lightGrey", padding: "0.5rem", borderRadius: "5px", borderWidth: "1px" }}>
+                      <a href="https://emam96.github.io/Class2Lab/" target="_blank">Visit</a>
+                      </div>
+                  </div>
+                 
+                </Col>
+              </Row>
+            </Container>
+           
+
+            
+
+          </section>
+          <hr 
+          width = "80%"
+           
+          ></hr>
+
+
+          <section   style={{ width: '80%', margin: "7rem auto", boxShadow: "0px 5px 10px lightgrey"  }} className="section section-lg">
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={journey}
+                    width = '1500px'
+                    style={{ boxShadow: "0px 5px 10px lightgrey"  }}
+                  />
+                </Col>
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div> */}
+                    <h3>journey (Personal Project)</h3>
+                    <p>
+                    This project is a website implementing many animation using CSS and JavaScript:<br></br>
+
+                     Name: journey<br></br>
+                     Number of pages: 1<br></br>
+                     Project duration: 3 days<br></br>
+                     
+                     
+                    </p>
+                    <ul className="list-unstyled mt-5">
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-settings-gear-65" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            Tools: HTML, CSS, and Javascript
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-html5" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">Catchy Design</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-satisfied" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                              Responsive
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div  style={{  width: "fit-Content",   margin: "0rem auto", fontSize: "1.5pc", boxShadow: "0px 2px 5px lightGrey", padding: "0.5rem", borderRadius: "5px", borderWidth: "1px" }}>
+                      <a href="https://emam96.github.io/Temp/" target="_blank">Visit</a>
+                      </div>
                   </div>
                 </Col>
               </Row>
             </Container>
           </section>
+          <hr 
+          width = "80%"
+           
+          ></hr>
+
+
+<section   style={{ width: '80%', margin: "9rem auto", boxShadow: "0px 5px 10px lightgrey", borderRadius: "5px"   }} className="section section-lg">
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={pat}
+                    width = '1500px'
+                    style={{ boxShadow: "0px 5px 10px lightgrey"  }}
+                  />
+                </Col>
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div> */}
+                    <h3>Pat-Cookies (201 Project)</h3>
+                    <p>
+                    This project is a website for a coffee shop:<br></br>
+
+                     Name: pats cookies<br></br>
+                     Number of pages: 2<br></br>
+                     Project duration: 1 week<br></br>
+                     
+                     Product: coffee and goods
+                    </p>
+                    <ul className="list-unstyled mt-5">
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-settings-gear-65" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                            Tools: HTML, CSS, and Javascript
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-html5" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">good layout</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-satisfied" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                              easy navigation
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div  style={{  width: "fit-Content",   margin: "0rem auto", fontSize: "1.5pc", boxShadow: "0px 2px 5px lightGrey", padding: "0.5rem", borderRadius: "5px", borderWidth: "1px" }}>
+                      <a href="https://emam96.github.io/cookie-stand/#menu" target="_blank">Visit</a>
+                      </div>
+                  </div>
+
+                </Col>
+              </Row>
+            </Container>
+            
+          </section>
+          <hr 
+          width = "70%"
+           
+          ></hr>
+    {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+
           <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
@@ -359,50 +526,36 @@ class Landing extends React.Component {
                         />
                       </svg>
                       <h4 className="display-3 font-weight-bold text-white">
-                        Design System
+                        Unique layouts
                       </h4>
                       <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
+                        I designed every layout of my projects and used different CSS methods each time, to practice more on styling and to give my portfolio some diversity
                       </p>
                     </blockquote>
                   </Card>
                 </Col>
                 <Col md="6">
                   <div className="pl-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
+                    {/* <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
                       <i className="ni ni-settings" />
-                    </div>
-                    <h3>Our customers</h3>
+                    </div> */}
+                    <h3>My Github Page</h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      You can visit my Github Page and browse my projects, take a look at the code and know how different stuff work.
                     </p>
                     <a
                       className="font-weight-bold text-warning mt-5"
-                      href="#pablo"
+                      href="https://github.com/Emam96"
                       onClick={e => e.preventDefault()}
                     >
-                      A beautiful UI Kit for impactful websites
+                      Click Here 
                     </a>
                   </div>
                 </Col>
               </Row>
             </Container>
           </section>
-          <section className="section pb-0 bg-gradient-warning">
+          {/* <section className="section pb-0 bg-gradient-warning">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -488,9 +641,9 @@ class Landing extends React.Component {
                   </Card>
                 </Col>
               </Row>
-            </Container>
+            </Container> */}
             {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
+            {/* <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
@@ -505,8 +658,8 @@ class Landing extends React.Component {
                 />
               </svg>
             </div>
-          </section>
-          <section className="section section-lg">
+          </section> */}
+          {/* <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -691,8 +844,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg pt-0">
+          </section> */}
+          {/* <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
                 <div className="p-5">
@@ -722,148 +875,31 @@ class Landing extends React.Component {
                 </div>
               </Card>
             </Container>
-          </section>
-          <section className="section section-lg bg-gradient-default">
-            <Container className="pt-lg pb-300">
-              <Row className="text-center justify-content-center">
-                <Col lg="10">
-                  <h2 className="display-3 text-white">Build something</h2>
+          </section> */}
+          <section style={{ height: "800px", textAlign: "center"}} className="section section-lg bg-gradient-default">
+            
+                  <h2 className="display-3 text-white">My Background</h2>
                   <p className="lead text-white">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record low maximum sea ice extent tihs year down
-                    to low ice.
+                  "I will work with you to deliver professional web applications that can enhance your business performance"
                   </p>
-                </Col>
-              </Row>
-              <Row className="row-grid mt-5">
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-settings text-primary" />
+                  <div style={{margin: "5rem auto", width: "65%"}}>
+                  <span style={{color: "white", }}>
+                  I studied business at Yarmouk university that is located in Irbid/Jordan, I worked on sales, so I don't have a tech background, but that did not stop me from learning programming, I loved tech and designed since I was just a kid, maybe I did not major in one of these fields but its never too late start over and land on a good job.
+                  </span><br></br>
+                  <img
+                    style={{ marginBottom: "10rem"}}
+                   width = "400px"
+                    src={emr}
+                  />
                   </div>
-                  <h5 className="text-white mt-3">Building tools</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-ruler-pencil text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Grow your market</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-atom text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Launch time</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
-              </Row>
-            </Container>
-            {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
-              >
-                <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
-                />
-              </svg>
-            </div>
+                  
+            
+<hr></hr>
+
           </section>
-          <section className="section section-lg pt-lg-0 section-contact-us">
-            <Container>
-              <Row className="justify-content-center mt--300">
-                <Col lg="8">
-                  <Card className="bg-gradient-secondary shadow">
-                    <CardBody className="p-lg-5">
-                      <h4 className="mb-1">Want to work with us?</h4>
-                      <p className="mt-0">
-                        Your project is very important to us.
-                      </p>
-                      <FormGroup
-                        className={classnames("mt-5", {
-                          focused: this.state.nameFocused
-                        })}
-                      >
-                        <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="ni ni-user-run" />
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="Your name"
-                            type="text"
-                            onFocus={() => this.setState({ nameFocused: true })}
-                            onBlur={() => this.setState({ nameFocused: false })}
-                          />
-                        </InputGroup>
-                      </FormGroup>
-                      <FormGroup
-                        className={classnames({
-                          focused: this.state.emailFocused
-                        })}
-                      >
-                        <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="ni ni-email-83" />
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="Email address"
-                            type="email"
-                            onFocus={() => this.setState({ emailFocused: true })}
-                            onBlur={() => this.setState({ emailFocused: false })}
-                          />
-                        </InputGroup>
-                      </FormGroup>
-                      <FormGroup className="mb-4">
-                        <Input
-                          className="form-control-alternative"
-                          cols="80"
-                          name="name"
-                          placeholder="Type a message..."
-                          rows="4"
-                          type="textarea"
-                        />
-                      </FormGroup>
-                      <div>
-                        <Button
-                          block
-                          className="btn-round"
-                          color="default"
-                          size="lg"
-                          type="button"
-                        >
-                          Send Message
-                        </Button>
-                      </div>
-                    </CardBody>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <Download />
+          
         </main>
-        <CardsFooter />
+        
       </>
     );
   }

@@ -23,7 +23,8 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import profile from "assets/img/theme/team-4-800x800.jpg";
+import profile from "assets/img/theme/emam2.JPG";
+
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -35,8 +36,8 @@ class Profile extends React.Component {
     return (
       <>
         <DemoNavbar />
-        <main className="profile-page" ref="main">
-          <section className="section-profile-cover section-shaped my-0">
+        <main  className="profile-page" ref="main">
+          <section  style={{ height: "500px",  backgroundColor: "#53B8BB",    margin: "0rem auto", textAlign: "center"   }} className="section-profile-cover section-shaped my-0">
             {/* Circles background */}
             <div className="shape shape-style-1 shape-default alpha-4">
               <span />
@@ -49,22 +50,22 @@ class Profile extends React.Component {
             </div>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
                 version="1.1"
                 viewBox="0 0 2560 100"
                 x="0"
                 y="0"
-              >
-                <polygon
+              > */}
+                {/* <polygon
                   className="fill-white"
                   points="2560 0 2560 100 0 100"
-                />
-              </svg>
+                /> */}
+              {/* </svg> */}
             </div>
           </section>
-          <section className="section">
+          <section style={{  height: "700px", margin: "-7rem auto", boxShadow: "0px 5px 10px lightgrey"  }} className="section">
             <Container>
               <Card className="card-profile shadow mt--300">
                 <div className="px-4">
@@ -76,6 +77,8 @@ class Profile extends React.Component {
                             alt="..."
                             className="rounded-circle"
                             src={profile}
+                            style = {{  height: "230px"}}
+
                           />
                         </a>
                       </div>
@@ -153,7 +156,7 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        {/* <SimpleFooter style={{  margin: "9rem auto",   }} /> */}
       </>
     );
   }
