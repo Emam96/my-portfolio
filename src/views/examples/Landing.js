@@ -20,6 +20,7 @@ import React from "react";
 import classnames from "classnames";
 import promo1 from "assets/img/theme/promo-1.png";
 import cardImg from "assets/img/theme/wildtee.jpeg";
+import SimpleFooter from "components/Footers/SimpleFooter.js";
 import ill2 from "assets/img/ill/ill-2.svg";
 import aboutMe from "assets/img/theme/aboutMe.jpeg";
 import journey from "assets/img/theme/journy.jpeg";
@@ -86,8 +87,8 @@ class Landing extends React.Component {
                     {/* <Col  lg="6"> */}
                     <div style={{   margin: "0rem auto",   }} >
                       <h1 style={{      }} className="display-3 text-white">
-                        Take a look on some of my work{" "}
-                        <span>All done within the boot-camp on ASAC</span>
+                      check out some of my work {" "}
+                        <span>You can check out more by visiting my profile on <a href={"https://github.com/Emam96"} target="_blank">Github</a> </span>
                       </h1>
                       </div>
                       <p className="lead text-white">
@@ -899,6 +900,7 @@ class Landing extends React.Component {
           </section>
           
         </main>
+        <SimpleFooter style={{  margin: "5rem auto",   }} />
         
       </>
     );

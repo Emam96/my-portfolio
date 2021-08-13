@@ -77,7 +77,7 @@ class Profile extends React.Component {
                             alt="..."
                             className="rounded-circle"
                             src={profile}
-                            style = {{  height: "230px"}}
+                            style = {{   width: "100px"}}
 
                           />
                         </a>
@@ -124,7 +124,7 @@ class Profile extends React.Component {
                   <div className="text-center mt-5">
                     <h3>
                       Emam Shararah{" "}
-                      <span className="font-weight-light">, 24</span>
+                      <span className="font-weight-light">,24</span>
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
@@ -156,7 +156,7 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        {/* <SimpleFooter style={{  margin: "9rem auto",   }} /> */}
+        <SimpleFooter style={{  margin: "0rem auto",   }} />
       </>
     );
   }
